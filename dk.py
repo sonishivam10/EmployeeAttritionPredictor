@@ -20,8 +20,7 @@ import plotly.graph_objects as go
 ###################### Functions ###########################
 
 def load_data():
-    DATA_URL = ('HR_comma_sep.csv')
-    old_data=pd.read_csv(DATA_URL)
+    old_data=pd.read_csv('HR_comma_sep.csv')
     #old_data[old_data['left']==0].drop('left', axis=1).to_csv('Emp_data.csv', index=False)
     Emp_data=pd.read_csv('Emp_data.csv')
     return old_data, Emp_data

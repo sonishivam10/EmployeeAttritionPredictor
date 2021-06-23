@@ -285,7 +285,6 @@ def prediction():
 def load_home(Home):
     if Home==0:
         dash=Image.open('hr_dash.jpg')
-        st.image(logo, use_column_width=True)
         st.title("HR-Anaytics Project")
         st.header("HR, Say Goodbye to Spreadsheets!")
         st.markdown("PeopleInsight is a workforce analytics platform delivered as a managed service. We connect all your people data and deliver beautiful dashboards and analytics so you can skip the spreadsheets."
@@ -306,10 +305,8 @@ def turnover_analysis():
 
 
 ###################### App Page ###########################
-logo=Image.open('REALAI.jpg')
-st.sidebar.image(logo, use_column_width=True)
-st.sidebar.title("Employee TurnOver App")
 
+st.sidebar.title("Employee TurnOver App")
 st.sidebar.markdown("This application is used to analyze and predict Employee TurnOver from the Company:")  
 dataset, Emp_data=load_data()
 
